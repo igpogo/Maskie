@@ -12,7 +12,29 @@
 		F15456C41E9D8E06009F9131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15456C21E9D8E06009F9131 /* Main.storyboard */; };
 		F15456C61E9D8E06009F9131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15456C51E9D8E06009F9131 /* Assets.xcassets */; };
 		F15456C91E9D8E07009F9131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15456C71E9D8E07009F9131 /* LaunchScreen.storyboard */; };
+		F15456D11E9D8E4F009F9131 /* FaceTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15456D01E9D8E4F009F9131 /* FaceTracker.framework */; };
+		F15456D21E9D8E4F009F9131 /* FaceTracker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F15456D01E9D8E4F009F9131 /* FaceTracker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F15456D91E9D8F99009F9131 /* masks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15456D41E9D8F99009F9131 /* masks.swift */; };
+		F15456DA1E9D8F99009F9131 /* PlistHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15456D51E9D8F99009F9131 /* PlistHelper.swift */; };
+		F15456DB1E9D8F99009F9131 /* extensionFacePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15456D61E9D8F99009F9131 /* extensionFacePoints.swift */; };
+		F15456DC1E9D8F99009F9131 /* latestState.plist in Resources */ = {isa = PBXBuildFile; fileRef = F15456D71E9D8F99009F9131 /* latestState.plist */; };
+		F15456DD1E9D8F99009F9131 /* MaskCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15456D81E9D8F99009F9131 /* MaskCollectionCell.swift */; };
+		F15456DF1E9D92AE009F9131 /* deviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15456DE1E9D92AE009F9131 /* deviceOrientation.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F15456D31E9D8E4F009F9131 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F15456D21E9D8E4F009F9131 /* FaceTracker.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F15456BB1E9D8E05009F9131 /* MaskieNF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaskieNF.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +44,13 @@
 		F15456C51E9D8E06009F9131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F15456C81E9D8E07009F9131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F15456CA1E9D8E07009F9131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15456D01E9D8E4F009F9131 /* FaceTracker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FaceTracker.framework; sourceTree = "<group>"; };
+		F15456D41E9D8F99009F9131 /* masks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = masks.swift; sourceTree = "<group>"; };
+		F15456D51E9D8F99009F9131 /* PlistHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistHelper.swift; sourceTree = "<group>"; };
+		F15456D61E9D8F99009F9131 /* extensionFacePoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensionFacePoints.swift; sourceTree = "<group>"; };
+		F15456D71E9D8F99009F9131 /* latestState.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = latestState.plist; sourceTree = "<group>"; };
+		F15456D81E9D8F99009F9131 /* MaskCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskCollectionCell.swift; sourceTree = "<group>"; };
+		F15456DE1E9D92AE009F9131 /* deviceOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = deviceOrientation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15456D11E9D8E4F009F9131 /* FaceTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +68,7 @@
 		F15456B21E9D8E05009F9131 = {
 			isa = PBXGroup;
 			children = (
+				F15456D01E9D8E4F009F9131 /* FaceTracker.framework */,
 				F15456BD1E9D8E05009F9131 /* MaskieNF */,
 				F15456BC1E9D8E05009F9131 /* Products */,
 			);
@@ -55,7 +86,13 @@
 			isa = PBXGroup;
 			children = (
 				F15456BE1E9D8E06009F9131 /* AppDelegate.swift */,
+				F15456D41E9D8F99009F9131 /* masks.swift */,
+				F15456D51E9D8F99009F9131 /* PlistHelper.swift */,
+				F15456D61E9D8F99009F9131 /* extensionFacePoints.swift */,
+				F15456D71E9D8F99009F9131 /* latestState.plist */,
+				F15456D81E9D8F99009F9131 /* MaskCollectionCell.swift */,
 				F15456C01E9D8E06009F9131 /* ViewController.swift */,
+				F15456DE1E9D92AE009F9131 /* deviceOrientation.swift */,
 				F15456C21E9D8E06009F9131 /* Main.storyboard */,
 				F15456C51E9D8E06009F9131 /* Assets.xcassets */,
 				F15456C71E9D8E07009F9131 /* LaunchScreen.storyboard */,
@@ -74,6 +111,7 @@
 				F15456B71E9D8E05009F9131 /* Sources */,
 				F15456B81E9D8E05009F9131 /* Frameworks */,
 				F15456B91E9D8E05009F9131 /* Resources */,
+				F15456D31E9D8E4F009F9131 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F15456C91E9D8E07009F9131 /* LaunchScreen.storyboard in Resources */,
+				F15456DC1E9D8F99009F9131 /* latestState.plist in Resources */,
 				F15456C61E9D8E06009F9131 /* Assets.xcassets in Resources */,
 				F15456C41E9D8E06009F9131 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15456DB1E9D8F99009F9131 /* extensionFacePoints.swift in Sources */,
+				F15456DA1E9D8F99009F9131 /* PlistHelper.swift in Sources */,
 				F15456C11E9D8E06009F9131 /* ViewController.swift in Sources */,
+				F15456DD1E9D8F99009F9131 /* MaskCollectionCell.swift in Sources */,
+				F15456D91E9D8F99009F9131 /* masks.swift in Sources */,
+				F15456DF1E9D92AE009F9131 /* deviceOrientation.swift in Sources */,
 				F15456BF1E9D8E06009F9131 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +306,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QCDKSA2TNF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MaskieNF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NCH.MaskieNF;
@@ -275,6 +324,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QCDKSA2TNF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MaskieNF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NCH.MaskieNF;
