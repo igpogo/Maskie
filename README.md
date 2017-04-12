@@ -1,3 +1,5 @@
+<img src="https://github.com/igpogo/Maskie/blob/master/MaskieNF/Assets.xcassets/AppIcon.appiconset/Icon-Small-40%402x-2.png" alt="Maskie logo" height="80" >
+
 # Maskie
 Swift application that overlaps images on top of features detected in faces
 
